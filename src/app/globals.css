@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+.headline {
+    color: #E1624F;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-block: 15px;
+}
