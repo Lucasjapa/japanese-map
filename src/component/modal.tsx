@@ -1,14 +1,15 @@
 import React from 'react'
 
-export const Modal = ({
-                          isVisible,
-                          onClose,
-                          children,
-                      }: {
-    isVisible: boolean
-    onClose: () => void
-    children: React.ReactNode
-}) => {
+export const Modal = (
+    {
+        isVisible,
+        onClose,
+        children,
+    }: {
+        isVisible: boolean
+        onClose: () => void
+        children: React.ReactNode
+    }) => {
     if (!isVisible) return null
     console.log("modal", isVisible)
     const handleClose = (e: any) => {

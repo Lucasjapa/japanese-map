@@ -79,6 +79,7 @@ export default function Home() {
                     initialPositionX={0}
                     initialPositionY={0}
                 >
+                    {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
                     {({zoomIn, zoomOut, ...rest}) => (
                         <div className="relative border-2 border-gray-200 rounded-lg shadow-lg">
                             <Controls/>

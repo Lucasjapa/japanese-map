@@ -1,16 +1,14 @@
 'use client'
 
-import {useSearchParams} from "next/navigation";
 import {useEffect, useState} from "react";
 import {getCitiesByState, loadCityData} from "@/app/model/City";
 import {formatNumber} from "@/utils/format";
 
 export default function State(
     props: {
-        stateName: String
+        stateName: string
     }
 ) {
-    const searchParams = useSearchParams();
     const stateName = props.stateName;
     const [cities, setCities] = useState([]);
 
