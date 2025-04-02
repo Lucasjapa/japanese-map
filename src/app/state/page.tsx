@@ -34,13 +34,17 @@ export default function State(
 
     return (
         <>
-            <h1 className="font-DMSans py-3 pl-3 text-3xl text-white bg-red-400 font-bold">
-                Estado: {stateName || "Não encontrado"}
-            </h1>
+            <div className="h-60 rounded-lg overflow-hidden">
+                <h1 className="font-DMSans py-3 pl-3 text-3xl text-white bg-red-400 font-bold">
+                    Estado: {stateName || "Não encontrado"}
+                </h1>
+                <img src={`/images/${stateName}.jpg`} alt={`Imagem de algum local referente a prefeitura de ${stateName}`}
+                     className="w-full h-full object-cover"/>
+            </div>
             {cities.length > 0 ? (
                 cities.map((city) => (
                     <div key={city}> {/* Adicionando uma chave única */}
-                        <div className="mt-8">
+                        <div className="mt-5">
                             <div className="subtitle">
                                 <span className="headline">Cidade principal: </span> {city.cidade}
                             </div>

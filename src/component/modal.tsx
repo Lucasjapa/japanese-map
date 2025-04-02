@@ -22,8 +22,8 @@ export const Modal = ({
                 onClick={handleClose}
             >
                 <div
-                    className={`bg-white rounded-lg shadow px-10 py-6 transition-all w-3/5 
-                    ${isVisible ? "scale-100 opacity-100" : "scale-110 opacity-0"} `}
+                    className={`bg-white rounded-lg shadow px-10 py-6 transition-all w-3/5 max-h-[80vh]
+                    ${isVisible ? "scale-100 opacity-100" : "scale-110 opacity-0"} overflow-y-auto`}
                     onClick={(e) => e.stopPropagation()}
                     // className="w-7/12 h-[80%] flex flex-col justify-center overflow-hidden"
                 >

@@ -72,7 +72,7 @@ export default function Home() {
 
     return (
         <>
-            <h1 className="text-center my-10 text-5xl text-red-400 tracking-[1em]">JAPAN</h1>
+            <h1 className="text-center my-10 text-5xl text-red-400 tracking-[1em]">JAPÃO</h1>
             <div className="flex justify-center">
                 <TransformWrapper
                     initialScale={1}
